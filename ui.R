@@ -9,25 +9,27 @@
 
 library(shiny)
 
-# Define UI for application that draws a histogram
 shinyUI(fluidPage(
-
-    # Application title
-    titlePanel("Old Faithful Geyser Data"),
-
-    # Sidebar with a slider input for number of bins
-    sidebarLayout(
-        sidebarPanel(
-            sliderInput("bins",
-                        "Number of bins:",
-                        min = 1,
-                        max = 50,
-                        value = 30)
-        ),
-
-        # Show a plot of the generated distribution
-        mainPanel(
-            plotOutput("distPlot")
+        
+    navbarPage("Reproducible Research (2020)",
+        tabPanel("Home", fluid = TRUE, icon = icon("globe-americas"),
+            sidebarLayout(
+                sidebarPanel(
+                    titlePanel("Reproducible Research (2020) Final Project")
+                ),
+                                
+                mainPanel(
+                    HTML(
+                        paste(
+                            h1("Reproducible Research (2020) - Final Project"),'<br/>',
+                            h2("Bartlomiej Wieczorek (345498)"),'<br/>',
+                            a("GitHub repo of this project", href = "https://github.com/bwieczorek4/ReprodResearchF1", target = "_blank")
+                        ) 
+                    ) 
+                ) 
+                                
+            ) 
         )
     )
 ))
+
