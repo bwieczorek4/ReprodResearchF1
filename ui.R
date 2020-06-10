@@ -106,7 +106,7 @@ shinyUI(fluidPage(
                         paste(
                             h1("Reproducible Research (2020) - Final Project"),'<br/>',
                             h2("Bartlomiej Wieczorek (345498)"),'<br/>',
-                            a("GitHub repo of this project", href = "https://github.com/bwieczorek4/reprod_research", target = "_blank")
+                            a("GitHub repo of this project", href = "https://github.com/bwieczorek4/ReprodResearchF1", target = "_blank")
                         )
                     )
                 )
